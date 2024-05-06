@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\breath-app-core.props" />
+</Project>

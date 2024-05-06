@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GIT\\breath-app-core\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\model\\dbcontext\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:model\\dbcontext\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\services\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:services\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\services\\assessmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:services\\assessmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\services\\genericentityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:services\\genericentityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\services\\igenericentityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:services\\igenericentityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\model\\baseentities\\serviceentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:model\\baseentities\\serviceentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\controllers\\assessmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:controllers\\assessmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|c:\\git\\breath-app-core\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A489A33D-7533-40C1-8886-4EBB454C177A}|breath-app-core.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GenericEntityService.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Services\\GenericEntityService.cs",
+              "RelativeDocumentMoniker": "Services\\GenericEntityService.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Services\\GenericEntityService.cs",
+              "RelativeToolTip": "Services\\GenericEntityService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T19:23:47.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAUAAACgmZmZmZkuwB0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:55:55.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProfileService.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Services\\ProfileService.cs",
+              "RelativeDocumentMoniker": "Services\\ProfileService.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Services\\ProfileService.cs",
+              "RelativeToolTip": "Services\\ProfileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:08:38.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "Controllers\\ProfileController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAD4vxAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:56:05.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AssessmentService.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Services\\AssessmentService.cs",
+              "RelativeDocumentMoniker": "Services\\AssessmentService.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Services\\AssessmentService.cs",
+              "RelativeToolTip": "Services\\AssessmentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:26:57.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "Services\\LoginService.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Services\\LoginService.cs",
+              "RelativeToolTip": "Services\\LoginService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:32:12.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Services\\ReservationService.cs",
+              "RelativeDocumentMoniker": "Services\\ReservationService.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Services\\ReservationService.cs",
+              "RelativeToolTip": "Services\\ReservationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:33:10.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T14:54:24.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IGenericEntityService.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Services\\IGenericEntityService.cs",
+              "RelativeDocumentMoniker": "Services\\IGenericEntityService.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Services\\IGenericEntityService.cs",
+              "RelativeToolTip": "Services\\IGenericEntityService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T19:26:45.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Model\\DbContext\\Profile.cs",
+              "RelativeDocumentMoniker": "Model\\DbContext\\Profile.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Model\\DbContext\\Profile.cs",
+              "RelativeToolTip": "Model\\DbContext\\Profile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:05:24.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceEntity.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Model\\BaseEntities\\ServiceEntity.cs",
+              "RelativeDocumentMoniker": "Model\\BaseEntities\\ServiceEntity.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Model\\BaseEntities\\ServiceEntity.cs",
+              "RelativeToolTip": "Model\\BaseEntities\\ServiceEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:55:49.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AssessmentController.cs",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\Controllers\\AssessmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AssessmentController.cs",
+              "ToolTip": "C:\\GIT\\breath-app-core\\Controllers\\AssessmentController.cs",
+              "RelativeToolTip": "Controllers\\AssessmentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:55:54.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\GIT\\breath-app-core\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\GIT\\breath-app-core\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-05T15:32:39.596Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

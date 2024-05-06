@@ -1,0 +1,6 @@
+@breath_app_core_HostAddress = http://localhost:5228
+
+GET {{breath_app_core_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
