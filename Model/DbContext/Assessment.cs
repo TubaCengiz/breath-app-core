@@ -2,9 +2,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace breath_app_core.Model.DbContext
-{
-    public class Assessment: ServiceEntity {
+namespace breath_app_core.Model.DbContext {
+    public class Assessment : ServiceEntity {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public int Id { get; set; }

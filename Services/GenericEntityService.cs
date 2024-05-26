@@ -15,7 +15,7 @@ public class GenericEntityService<TEntity> : IGenericEntityService<TEntity> wher
         _dbSet = _context.Set<TEntity>();
     }
 
-    public TEntity? GetById(int id) {
+    public TEntity? GetById(long id) {
         return _dbSet.Find(id);
     }
 
@@ -33,7 +33,7 @@ public class GenericEntityService<TEntity> : IGenericEntityService<TEntity> wher
         _context.SaveChanges();
     }
 
-    public void Delete(int id) {
+    public void Delete(long id) {
         var entity = _dbSet.Find(id);
         if (entity != null) {
             _dbSet.Remove(entity);

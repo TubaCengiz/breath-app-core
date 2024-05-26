@@ -30,6 +30,9 @@ namespace breath_app_core.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<long>("ContactInformationId")
+                        .HasColumnType("bigint");
+
                     b.Property<long>("LoginInformationId")
                         .HasColumnType("bigint");
 
@@ -45,6 +48,8 @@ namespace breath_app_core.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ContactInformationId");
 
                     b.HasIndex("LoginInformationId");
 
@@ -127,22 +132,19 @@ namespace breath_app_core.Migrations
 
             modelBuilder.Entity("breath_app_core.Model.DbContext.Contact", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -213,17 +215,17 @@ namespace breath_app_core.Migrations
 
             modelBuilder.Entity("breath_app_core.Model.DbContext.ReservationInfo", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
+                    b.Property<long?>("CustomerId")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("RecordStatus")
                         .IsRequired()
@@ -232,7 +234,14 @@ namespace breath_app_core.Migrations
                     b.Property<int>("ReservationTypeId")
                         .HasColumnType("int");
 
+                    b.Property<long?>("TherapystId")
+                        .HasColumnType("bigint");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("TherapystId");
 
                     b.ToTable("ReservationInfos");
                 });
@@ -284,13 +293,36 @@ namespace breath_app_core.Migrations
 
             modelBuilder.Entity("BreathApp.Models.Profile", b =>
                 {
+                    b.HasOne("breath_app_core.Model.DbContext.Contact", "ContactInformation")
+                        .WithMany()
+                        .HasForeignKey("ContactInformationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("breath_app_core.Model.DbContext.LoginInformation", "LoginInformation")
                         .WithMany()
                         .HasForeignKey("LoginInformationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("ContactInformation");
+
                     b.Navigation("LoginInformation");
+                });
+
+            modelBuilder.Entity("breath_app_core.Model.DbContext.ReservationInfo", b =>
+                {
+                    b.HasOne("BreathApp.Models.Profile", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId");
+
+                    b.HasOne("BreathApp.Models.Profile", "Therapyst")
+                        .WithMany()
+                        .HasForeignKey("TherapystId");
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Therapyst");
                 });
 #pragma warning restore 612, 618
         }

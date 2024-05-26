@@ -10,11 +10,15 @@
         "projectUniqueName": "C:\\GIT\\breath-app-core\\breath-app-core.csproj",
         "projectName": "breath-app-core",
         "projectPath": "C:\\GIT\\breath-app-core\\breath-app-core.csproj",
-        "packagesPath": "C:\\Users\\mert-\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\WhiteToBlack\\.nuget\\packages\\",
         "outputPath": "C:\\GIT\\breath-app-core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mert-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WhiteToBlack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -35,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -98,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

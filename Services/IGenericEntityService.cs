@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace breath_app_core.Services {
     public interface IGenericEntityService<TEntity> {
-        public TEntity? GetById(int id);
+        public TEntity? GetById(long id);
         public List<TEntity> GetAll();
         public void Add(TEntity entity);
         public void Update(TEntity entity);
-        public void Delete(int id);
+        public void Delete(long id);
 
     }
 }

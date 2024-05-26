@@ -9,49 +9,27 @@ namespace breath_app_core.Controllers {
     using System;
     using System.Collections.Generic;
 
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class ReservationController : ControllerBase {
         private readonly ReservationService _reservationService;
-
-        public ReservationController(ReservationService reservationService) {
-            _reservationService = reservationService;
+        public ReservationController(IGenericEntityService<ReservationInfo> reservationService) {
+            _reservationService = (ReservationService)reservationService;
         }
 
-        [HttpGet("{id}")]
-        public ActionResult<ReservationInfo> GetById(int id) {
-            var reservation = _reservationService.GetById(id);
-            if (reservation == null) {
-                return NotFound();
-            }
-            return reservation;
-        }
-
-        [HttpGet]
-        public ActionResult<List<ReservationInfo>> GetAll() {
-            return _reservationService.GetAll();
-        }
-
-        [HttpPost]
-        public IActionResult Create(ReservationInfo reservation) {
+        [HttpPost("CreateReservation")]
+        public void CreateReservation(ReservationInfo reservation) {
             _reservationService.Add(reservation);
-            return CreatedAtAction(nameof(GetById), new { id = reservation.Id }, reservation);
         }
 
-        [HttpPut("{id}")]
-        public IActionResult Update(int id, ReservationInfo reservation) {
-            if (id != reservation.Id) {
-                return BadRequest();
-            }
-
-            _reservationService.Update(reservation);
-            return NoContent();
+        [HttpGet("GetAllReservationByCustomerId")]
+        public List<ReservationInfo> GetAllReservationByCustomerId(long id) {
+            return _reservationService.GetAllReservationByCustomerId(id);
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id) {
-            _reservationService.Delete(id);
-            return NoContent();
+        [HttpGet("GetAllReservationByTherapystId")]
+        public List<ReservationInfo> GetAllReservationByTherapystId(long id) {
+            return _reservationService.GetAllReservationByTherapystId(id);
         }
     }
 }

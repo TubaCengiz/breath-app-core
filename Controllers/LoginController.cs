@@ -7,29 +7,35 @@ namespace BreathApp.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class LoginController : ControllerBase {
-    private readonly LoginService _loginService;
-
-    public LoginController(IGenericEntityService<Profile> loginService) {
-        _loginService = (LoginService)loginService;
-    }
+public class LoginController(IGenericEntityService<Profile> profileService, IGenericEntityService<LoginInformation> loginService, IGenericEntityService<Contact> contactService) : ControllerBase
+{
+    private readonly LoginService _loginService = (LoginService)loginService;
+    private readonly ProfileService _profileService = (ProfileService)profileService;
+    private readonly ContactService _contactService = (ContactService)contactService;
 
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public ActionResult<bool> CreateProfile(Profile userProfile) {
-        //Db Kayıt...
-        //return CreatedAtAction(nameof(GetById), new { id = pet.Id }, pet);
+    public ActionResult<bool> CreateProfile(Profile userProfile)
+    {
+        _profileService.Add(userProfile);
         return true;
     }
 
-    [HttpGet]
-    public ActionResult<Profile> GetLoginInformation(string loginName) {
-        //Db Kayıt oku...
+    [HttpGet("ValidateUser")]
+    public ActionResult<Profile> GetLoginInformation(string userName, string password)
+    {
+        Profile information = _profileService.GetProfileByLoginName(userName);      
+        if (information == null)
+        {
+            throw new Exception("profil bilgileri bulunamadı");
+        }
 
-        return _loginService.GetProfileByLoginName(loginName);
+        if (password == information.LoginInformation.Password)
+        {
+            return information;
+        }
 
+        throw new Exception("şifre yanlış");
     }
-
-
 }
