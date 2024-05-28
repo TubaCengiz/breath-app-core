@@ -15,6 +15,7 @@ namespace breath_app_core.Model.DbContext {
         public required int ReservationTypeId { get; set; }
         public virtual Profile? Therapyst { get; set; }
         public virtual Profile? Customer { get; set; }
+        public DateTime ReservationTime { get; set; }
         public DateTime CreateDate { get; set; }
         public required string RecordStatus { get; set; }
     }

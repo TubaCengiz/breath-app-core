@@ -9,13 +9,14 @@ namespace breath_app_core.Controllers {
     using System;
     using System.Collections.Generic;
 
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class AssessmentController : ControllerBase {
-        private readonly AssessmentService _assesmentService;
-
-        public AssessmentController(AssessmentService assessmentService) {
-            _assesmentService = assessmentService;
+        private readonly AssestmentService _assesmentService;
+        private readonly AssestmentSetService _assestmentSetService;
+        public AssessmentController(IGenericEntityService<Assessment> assessmentService, IGenericEntityService<AssessmentSet> assessmentSetService) {
+            _assesmentService = (AssestmentService)assessmentService;
+            _assestmentSetService = (AssestmentSetService)assessmentSetService;
         }
 
         [HttpGet("{id}")]
@@ -30,6 +31,11 @@ namespace breath_app_core.Controllers {
         [HttpGet]
         public ActionResult<List<Assessment>> GetAll() {
             return _assesmentService.GetAll();
+        }
+
+        [HttpGet("GetAllSet")]
+        public ActionResult<List<AssessmentSet>> GetAllSet() {
+            return _assestmentSetService.GetAll();
         }
 
         [HttpPost]

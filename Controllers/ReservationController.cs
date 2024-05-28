@@ -22,6 +22,12 @@ namespace breath_app_core.Controllers {
             _reservationService.Add(reservation);
         }
 
+        [HttpPost("CancelReservation")]
+        public void CancelReservation(ReservationInfo reservationInfo) {
+            reservationInfo.RecordStatus = "P";
+            _reservationService.Update(reservationInfo);
+        }
+
         [HttpGet("GetAllReservationByCustomerId")]
         public List<ReservationInfo> GetAllReservationByCustomerId(long id) {
             return _reservationService.GetAllReservationByCustomerId(id);

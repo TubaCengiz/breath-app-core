@@ -12,8 +12,9 @@ builder.Services.AddControllers();
 builder.Services.AddTransient<IGenericEntityService<Profile>, ProfileService>();
 builder.Services.AddTransient<IGenericEntityService<ReservationInfo>, ReservationService>();
 builder.Services.AddTransient<IGenericEntityService<LoginInformation>, LoginService>();
-builder.Services.AddTransient<IGenericEntityService<Assessment>, AssessmentService>();
+builder.Services.AddTransient<IGenericEntityService<Assessment>, AssestmentService>();
 builder.Services.AddTransient<IGenericEntityService<Contact>, ContactService>();
+builder.Services.AddTransient<IGenericEntityService<AssessmentSet>, AssestmentSetService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

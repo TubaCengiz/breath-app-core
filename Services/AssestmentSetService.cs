@@ -2,6 +2,6 @@
 using BreathApp.Models;
 
 namespace breath_app_core.Services {
-    public class AssessmentService(BreathContext context) : GenericEntityService<Assessment>(context) {
+    public class AssestmentSetService(BreathContext context) : GenericEntityService<AssessmentSet>(context) {
     }
 }

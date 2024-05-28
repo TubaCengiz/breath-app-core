@@ -6,9 +6,11 @@ namespace breath_app_core.Model.DbContext {
     public class Assessment : ServiceEntity {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public int Id { get; set; }
-        public int TestSetId { get; set; }
-        public string Question { get; set; }
-        public string Answer { get; set; }
+        public long Id { get; set; }
+        [ForeignKey("TestSetId")]
+        public required long TestSetId { get; set; }
+        public required string Question { get; set; }
+        public required string Answer { get; set; }
+        public virtual AssessmentSet AssessmentSet{get;set;}
     }
 }
