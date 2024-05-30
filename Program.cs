@@ -15,6 +15,7 @@ builder.Services.AddTransient<IGenericEntityService<LoginInformation>, LoginServ
 builder.Services.AddTransient<IGenericEntityService<Assessment>, AssestmentService>();
 builder.Services.AddTransient<IGenericEntityService<Contact>, ContactService>();
 builder.Services.AddTransient<IGenericEntityService<AssessmentSet>, AssestmentSetService>();
+builder.Services.AddTransient<IGenericEntityService<AssessmentResult>, AssessmentResultService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

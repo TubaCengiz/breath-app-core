@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("breath-app-core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd1a9d3751a8a2ee41b7bdc304c95d07b38fea4c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dddeff7a42bb8675eb3459f5d34c3c31c349fa20")]
 [assembly: System.Reflection.AssemblyProductAttribute("breath-app-core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("breath-app-core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

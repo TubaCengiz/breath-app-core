@@ -14,9 +14,11 @@ namespace breath_app_core.Controllers {
     public class AssessmentController : ControllerBase {
         private readonly AssestmentService _assesmentService;
         private readonly AssestmentSetService _assestmentSetService;
-        public AssessmentController(IGenericEntityService<Assessment> assessmentService, IGenericEntityService<AssessmentSet> assessmentSetService) {
+        private readonly AssessmentResultService _assessmentResultService;
+        public AssessmentController(IGenericEntityService<Assessment> assessmentService, IGenericEntityService<AssessmentSet> assessmentSetService, IGenericEntityService<AssessmentResult> assessmentResultService) {
             _assesmentService = (AssestmentService)assessmentService;
             _assestmentSetService = (AssestmentSetService)assessmentSetService;
+            _assessmentResultService = (AssessmentResultService)assessmentResultService;
         }
 
         [HttpGet("{id}")]
@@ -28,9 +30,13 @@ namespace breath_app_core.Controllers {
             return assessment;
         }
 
-        [HttpGet]
-        public ActionResult<List<Assessment>> GetAll() {
-            return _assesmentService.GetAll();
+        [HttpGet("GetAllBySetId")]
+        public ActionResult<List<Assessment>> GetAllBySetId(int id) {
+            var assessment = _assesmentService.GetAssesmentsBySetId(id);
+            if (assessment == null) {
+                return NotFound();
+            }
+            return assessment;
         }
 
         [HttpGet("GetAllSet")]
@@ -38,26 +44,9 @@ namespace breath_app_core.Controllers {
             return _assestmentSetService.GetAll();
         }
 
-        [HttpPost]
-        public IActionResult Create(Assessment assessment) {
-            _assesmentService.Add(assessment);
-            return CreatedAtAction(nameof(GetById), new { id = assessment.Id }, assessment);
-        }
-
-        [HttpPut("{id}")]
-        public IActionResult Update(int id, Assessment assessment) {
-            if (id != assessment.Id) {
-                return BadRequest();
-            }
-
-            _assesmentService.Update(assessment);
-            return NoContent();
-        }
-
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id) {
-            _assesmentService.Delete(id);
-            return NoContent();
+        [HttpPost("SaveTestResult")]
+        public void SaveTestResult(AssessmentResult res) {
+            _assessmentResultService.Add(res);
         }
     }
 }
